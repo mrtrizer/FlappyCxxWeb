@@ -1,0 +1,3 @@
+[submodule "modules/flappyengine"]
+	path = modules/flappyengine
+	url = https://github.com/mrtrizer/FlappyEngine.git
