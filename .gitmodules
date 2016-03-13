@@ -1,3 +1,6 @@
 [submodule "modules/flappyengine"]
 	path = modules/flappyengine
 	url = https://github.com/mrtrizer/FlappyEngine.git
+[submodule "modules/flappycxx"]
+	path = modules/flappycxx
+	url = https://github.com/mrtrizer/FlappyCxx.git
