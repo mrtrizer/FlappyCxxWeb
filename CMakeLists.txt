@@ -10,9 +10,12 @@ add_subdirectory(modules/flappyengine)
 add_subdirectory(modules/flappycxx)
 
 file(GLOB SOURCES src/*.cpp)
-add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} FlappyEngine)
-target_link_libraries(${PROJECT_NAME} FlappyCxx)
+set(EXECUTABLE_NAME flappycxx.html)
+
+add_executable(${EXECUTABLE_NAME} ${SOURCES})
+
+target_link_libraries(${EXECUTABLE_NAME} FlappyEngine)
+target_link_libraries(${EXECUTABLE_NAME} FlappyCxx)
 
 file(COPY res DESTINATION ${CMAKE_BINARY_DIR})
